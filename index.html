@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Email Template</title>
     <style type="text/css">
         body{
             margin: 0;
-            background-color: rgb(152, 24, 24);
+            background-color: rgb(255, 255, 255);
+            font-family: 'Poppins', sans-serif;
         }
         table{
             border-spacing: 0;
@@ -19,16 +23,187 @@
         img{
             border: 0;
         }
+        .main{
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+
+        }
         .wrapper{
             width: 100%;
             outline: solid rgb(20, 36, 141) 1px;
+            background-color: #E5E5E5;
+           
+        }
+        .header{
+            background-color: rgb(241, 241, 241);
+        }
+        .header__text{
+           text-decoration: none;
+           padding: 10px 40px;
+           text-align: end;
+           columns: #939393;
+        }
+        .header__link{
+            text-decoration: none;
+            color: #939393;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 2.18;
+        }
+        .logo__box{
+            background-color: rgb(255, 255, 255);
+            padding: 40px 231px;
+        }
+
+        .info-desc{
+            background-color: rgb(255, 255, 255);
+        }
+        .info-desc__title{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 1.31;
+            text-align: center;
+            margin: 0;
+            color: #191919;
+        }
+
+        .info-desc__text{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            text-align: center;
+            color: #939393;
+            padding: 10px 40px 30px;
+            margin: 0;
+        }
+        .info-desc__btn-wrapper{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+           
+}
+.info-desc__button{
+    border: none;
+            background: #FF3838;
+            border-radius: 45px;
+            width: 168px;
+height: 52px;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.71;
+text-align: center;
+letter-spacing: 0.005em;
+padding: 14px 40px;
+color: #FFffff;
+margin-bottom: 40px;
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
-        <table width="100%">
-            <td>Hello email world</td>
+        <table class="main" width="100%">
+            <!-- HEADER -->
+           <tr>
+            <td>
+                <table class="header" width="100%">
+                    <tr>
+                        <td class="header__text"> 
+                            <a href="#" class="header__link">View in browser →</a>
+                           
+                        </td>
+                    </tr>
+                </table>    
+            </td>
+           </tr>
+
+           <!-- LOGO -->
+           <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td class="logo__box">
+                            <a href="#"><img src="https://i.ibb.co/zhTT5n1/Logo.png" alt="Logo" border="0" /></a> 
+                            <!-- <img src="./img/Logo.png" alt="logo"> -->
+                        </td>
+                    </tr>
+                
+                </table>
+            </td>
+           </tr>
+           <!-- HERO -->
+           <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td class="hero__box" style="padding-bottom: 20px; background-color: #ffffff;">
+                            <!-- <img src="./img/hero.png" alt="banner"> -->
+                            <a href="#"><img src="https://i.ibb.co/MkY20Nt/hero.png" alt="hero" border="0"></a>
+                        </td>
+                    </tr>
+                
+                </table>
+            </td>
+           </tr>
+
+           <!-- SPACE -->
+           <tr>
+            <td height="20" style="background-color: rgb(255, 255, 255);"></td>
+           </tr>
+           <!-- INFO-DESCRIPTION -->
+
+           <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td class="info-desc"> 
+                            <h2 class="info-desc__title">Verify your email address</h2>
+                            <p class="info-desc__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit vehicula dui sit amet ligula cursus. dolor sit amet dolor adipiscing.</p>
+                            <table class="info-desc__btn-wrapper" width="100%">
+                                <tr>
+                                    <td>
+                                <button type="button" class="info-desc__button">Verify email</button>
+
+                            </td>
+                        </tr>
+                    </table>    
+                    </td>
+                    </tr>
+                </table>
+
+            </td>
+           </tr>
+           <!-- FOOTER  -->
+
+           <tr>
+            <td style="background-color: #F1F1F1;">
+                <table width="100%" class="footer__social">
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <table width="100%" class="footer__info">
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <table width="100%" class="footer__links">
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <table width="100%" class="footer__logo">
+                    <tr>
+                        <td style="padding: 30px 231px 40px;">     
+                             <a href="#"><img src="https://i.ibb.co/zhTT5n1/Logo.png" alt="Logo" border="0" /></a> 
+                        </td>
+                    </tr>
+                </table>
+            </td>
+           </tr>
         </table>
     </div>
 </body>
