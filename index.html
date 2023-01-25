@@ -83,27 +83,50 @@
             margin-right: auto;
            
 }
-.info-desc__button{
-    border: none;
+        .info-desc__button{
+            border: none;
             background: #FF3838;
             border-radius: 45px;
             width: 168px;
-height: 52px;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.71;
-text-align: center;
-letter-spacing: 0.005em;
-padding: 14px 40px;
-color: #FFffff;
-margin-bottom: 40px;
+            height: 52px;
+            font-weight: 700;
+            line-height: 1.71;
+            font-size: 14px;
+            letter-spacing: 0.005em;
+            text-align: center;
+            color: #FFffff;
+            margin-bottom: 40px;
+            padding: 14px 40px;
+        }
+
+        .footer{
+            text-align: center;
+            
+        }
+        .social, .footer__links:not(last-child){
+            padding-right: 10px;
+        }
+        .footer__desc{
+            margin: 0;
+            padding: 20px 64px 30px;
+        }
+
+        .footer__desc, .footer__links{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            color: #939393;
         }
     </style>
 </head>
+
+
 <body>
     <div class="wrapper">
         <table class="main" width="100%">
+
             <!-- HEADER -->
+            
            <tr>
             <td>
                 <table class="header" width="100%">
@@ -118,26 +141,27 @@ margin-bottom: 40px;
            </tr>
 
            <!-- LOGO -->
+
            <tr>
             <td>
                 <table width="100%">
                     <tr>
                         <td class="logo__box">
                             <a href="#"><img src="https://i.ibb.co/zhTT5n1/Logo.png" alt="Logo" border="0" /></a> 
-                            <!-- <img src="./img/Logo.png" alt="logo"> -->
                         </td>
                     </tr>
                 
                 </table>
             </td>
            </tr>
+
            <!-- HERO -->
+
            <tr>
             <td>
                 <table width="100%">
                     <tr>
-                        <td class="hero__box" style="padding-bottom: 20px; background-color: #ffffff;">
-                            <!-- <img src="./img/hero.png" alt="banner"> -->
+                        <td class="hero__box" style="background-color: #ffffff;">
                             <a href="#"><img src="https://i.ibb.co/MkY20Nt/hero.png" alt="hero" border="0"></a>
                         </td>
                     </tr>
@@ -150,6 +174,7 @@ margin-bottom: 40px;
            <tr>
             <td height="20" style="background-color: rgb(255, 255, 255);"></td>
            </tr>
+
            <!-- INFO-DESCRIPTION -->
 
            <tr>
@@ -173,35 +198,28 @@ margin-bottom: 40px;
 
             </td>
            </tr>
+
            <!-- FOOTER  -->
 
            <tr>
-            <td style="background-color: #F1F1F1;">
-                <table width="100%" class="footer__social">
+            <td style="background-color: #F1F1F1; padding: 40px; ">
+                <table width="100%" class="footer">
                     <tr>
-                        <td></td>
-                    </tr>
-                </table>
-
-                <table width="100%" class="footer__info">
-                    <tr>
-                        <td></td>
-                    </tr>
-                </table>
-
-                <table width="100%" class="footer__links">
-                    <tr>
-                        <td></td>
-                    </tr>
-                </table>
-
-                <table width="100%" class="footer__logo">
-                    <tr>
-                        <td style="padding: 30px 231px 40px;">     
-                             <a href="#"><img src="https://i.ibb.co/zhTT5n1/Logo.png" alt="Logo" border="0" /></a> 
+                        <td style="font-size: 0px;">
+                            <a href="#"><img src="https://i.ibb.co/DQ67SD8/instagram-png.png" alt="instagram-png" class="social" border="0"></a>
+                            <a href="#"><img src="https://i.ibb.co/LvCVDHJ/Twitter-png.png" alt="Twitter-png" class="social" border="0"></a>
+                            <a href="#"><img src="https://i.ibb.co/DtS0FKg/Facebook-png.png" alt="Facebook-png" class="social" border="0"></a>
+                            <a href="#"><img src="https://i.ibb.co/Cs0RWH0/Link.png" alt="Link" border="0"></a>
+                            <p class="footer__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Duis sit vehicula dui sit amet ligula cursus.</p>                           
+                              <a href="#" class="footer__links">Privacy</a>  
+                              <a href="#" class="footer__links">Account</a> 
+                              <a href="#" class="footer__links">Unsubscribe</a> 
+                            <a href="#" style="padding-top: 30px; display:block;"><img src="https://i.ibb.co/zhTT5n1/Logo.png" alt="Logo" border="0" /></a> 
                         </td>
                     </tr>
                 </table>
+
             </td>
            </tr>
         </table>
